@@ -1,24 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import axios from 'axios';
+import Home from './components/home';
+import Shop from './components/shop';
+import Contact from './components/contact';
+import Addproduct from './components/addproduct';
+import Login from './components/login';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AuthContext from './context/authContext';
+
+axios.defaults.withCredentials=true;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <BrowserRouter>
+    <Routes>
+    <Route path="/" element={<Home />}></Route>
+    <Route path="/shop" element={<Shop/>}></Route>
+    <Route path="/contact" element={<Contact  />}></Route>
+    <Route path="/add" element={<Addproduct  />}></Route>
+    <Route path="/login" element={<Login  />}></Route>
+    </Routes>
+    </BrowserRouter>
+    </>
   );
 }
 
