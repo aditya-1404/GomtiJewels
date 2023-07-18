@@ -37,7 +37,7 @@ function Addproduct() {
     <>
     <Nav/>
         <h1 className='text-center my-3'>Add Product</h1>
-      <form action="https://gomti-backend.onrender.com/" method="post" enctype="multipart/form-data">
+      <form action="https://gomti-backend.onrender.com" method="post" enctype="multipart/form-data">
     <div className='container'>
     <div class="mb-3">
   <label for="formGroupExampleInput" class="form-label">Product id(Unique):</label>
