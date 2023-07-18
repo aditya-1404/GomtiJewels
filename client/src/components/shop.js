@@ -11,7 +11,7 @@ function Shop(props) {
   var a=[]
   const [items,setItem]=useState(a);
   const getdata=async ()=>{
-    const item=await axios.get('http://localhost:5000/get')
+    const item=await axios.get('https://gomti-backend.onrender.com/get')
     setItem(item.data)
     // console.log(items)
   }
