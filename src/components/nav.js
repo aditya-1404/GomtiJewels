@@ -32,6 +32,9 @@ function Nav() {
         </li>
       </ul>
       {login?(<li class="nav-item d-flex">
+          <Link class="nav-link mx-2 my-2" to="/add">Add Product</Link>
+        </li>):<></>}
+      {login?(<li class="nav-item d-flex">
           <Link class="nav-link" onClick={logout} to="/">Admin logout</Link>
         </li>):(<li class="nav-item d-flex">
           <Link class="nav-link" to="/login">Admin Login</Link>

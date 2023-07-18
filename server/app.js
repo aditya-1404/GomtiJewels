@@ -1,8 +1,10 @@
 const express=require('express')
 const mongoose=require('mongoose')
+const dotenv=require('dotenv')
 const app=express()
 const cors=require('cors');
-mongoose.connect("mongodb+srv://srivastavaaditya0522:aditya@cluster0.u6brcxf.mongodb.net/").then(()=>{console.log("done")})
+dotenv.config();
+mongoose.connect(process.env.LINK).then(()=>{console.log("done")})
 app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 const path=require('path')
@@ -17,4 +19,4 @@ app.use(cors({
 app.use('/',require("./routes/add"))
 app.use('/admin',require("./routes/admin"))
 
-app.listen(5000);
+app.listen(process.env.PORT);

@@ -7,6 +7,7 @@ import Addproduct from './components/addproduct';
 import Login from './components/login';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AuthContext from './context/authContext';
+import { useEffect } from 'react';
 
 axios.defaults.withCredentials=true;
 

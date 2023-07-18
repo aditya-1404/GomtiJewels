@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Nav from './nav'
 import '../components/shop.css'
 import Item from './item'
@@ -6,21 +6,23 @@ import './shop.css'
 import axios from 'axios'
 import { useEffect } from 'react'
 
-var items=[]
 
-const getdata=async ()=>{
-  const item=await axios.get('http://localhost:5000/get')
-  items=item.data
-  // console.log(items)
-}
 function Shop(props) {
+  var a=[]
+  const [items,setItem]=useState(a);
+  const getdata=async ()=>{
+    const item=await axios.get('http://localhost:5000/get')
+    setItem(item.data)
+    // console.log(items)
+  }
   useEffect(()=>{
     getdata()
   },[])
+  console.log(items)
   return (
       <>
       <Nav/>
-      <div className='itemlist'>
+      <div className='container itemlist'>
       {items.map((i) => {
         // console.log(i)
         return(<Item item={i}/>)

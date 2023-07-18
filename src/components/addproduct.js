@@ -40,7 +40,7 @@ function Addproduct() {
       <form action="http://localhost:5000/" method="post" enctype="multipart/form-data">
     <div className='container'>
     <div class="mb-3">
-  <label for="formGroupExampleInput" class="form-label">Product id:</label>
+  <label for="formGroupExampleInput" class="form-label">Product id(Unique):</label>
   <input type="text" class="form-control" name="id" value={id} id="formGroupExampleInput" onChange={inputhandleid} placeholder="Enter product id"/>
 </div>
     <div class="mb-3">
