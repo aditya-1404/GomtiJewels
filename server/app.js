@@ -12,10 +12,11 @@ const path=require('path')
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 
-app.use(cors({
-    origin: ['http://localhost:3000'],
+app.use("*",cors({
+    origin: true,
     credentials: true,
 }));
+// app.use(cors())
 app.use('/',require("./routes/add"))
 app.use('/admin',require("./routes/admin"))
 
