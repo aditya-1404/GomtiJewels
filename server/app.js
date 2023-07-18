@@ -19,4 +19,4 @@ app.use(cors({
 app.use('/',require("./routes/add"))
 app.use('/admin',require("./routes/admin"))
 
-app.listen(process.env.PORT);
+app.listen(process.env.PORT || 5000);
