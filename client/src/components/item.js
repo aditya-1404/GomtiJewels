@@ -3,7 +3,7 @@ import '../components/item.css'
 
 
 function item(props) {
-  const serverBaseURI='http://localhost:5000'
+  const serverBaseURI='https://gomti-backend.onrender.com'
   return (
     <>
     <div className='mx-3 my-3'>
