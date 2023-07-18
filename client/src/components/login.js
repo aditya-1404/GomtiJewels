@@ -14,7 +14,7 @@ function Login() {
     const handlesubmit=async(e)=>{
         e.preventDefault()
         try{
-        const cred=await axios.post("http://localhost:5000/admin/login",{email,pwd})
+        const cred=await axios.post("https://gomti-backend.onrender.com/admin/login",{email,pwd})
         navigate("/add");
         window.location.reload();
         }catch(err){
