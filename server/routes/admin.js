@@ -29,9 +29,9 @@ router.post('/login',async (req,res)=>{
             },jwtsec
         )
         res.cookie('token',token,{
-            httpOnly:true,
-            secure:true,
-            sameSite:"none",
+            // httpOnly:true,
+            // secure:true,
+            // sameSite:"none",
         }).send()
     }catch(err){
         console.log(err)
