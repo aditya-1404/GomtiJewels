@@ -14,14 +14,7 @@ function Login() {
     const handlesubmit=async(e)=>{
         e.preventDefault()
         try{
-          // const config={
-          //   headers:{
-          //     "Content-Type":"application/json",
-          //   },
-          //   withCredentials:true
-          // }
         const cred=await axios.post("https://gomti-backend.onrender.com/admin/login",{email,pwd},{withCredentials:true})
-        console.log(cred);
         navigate("/add");
         window.location.reload();
         }catch(err){
