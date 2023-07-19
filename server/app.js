@@ -15,6 +15,7 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 app.use(cors({
     origin: true,
     credentials: true,
+    exposedHeaders: ["set-cookie"],
 }));
 // app.use(cors())
 app.use('/',require("./routes/add"))
