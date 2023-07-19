@@ -6,7 +6,7 @@ import axios from 'axios'
 
 function Nav() {
   const logout=async ()=>{
-    await axios.get('http://localhost:5000/admin/logout')
+    await axios.get('https://gomti-backend.onrender.com/admin/logout')
     window.location.reload();
   }
   const {login}=useContext(Auth)
