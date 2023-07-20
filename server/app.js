@@ -10,7 +10,13 @@ app.use(express.json())
 const path=require('path')
 
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
-
+app.use((req, res, next) => {
+    res.setHeader("Access-Control-Allow-Origin", process.env.DOMAIN_URL);
+    res.setHeader("Access-Control-Allow-Credentials", true);
+    res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+    res.header("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE");
+    next();
+  });
 app.set("trust proxy", 1)
 app.use(cors({
     origin: true,
