@@ -49,9 +49,10 @@ router.get("/logout",(req,res)=>{
 
 router.get("/loggedin",(req,res)=>{
     try{
-        const t = req.headers.cookie.split(";").find(c => c.trim().startsWith("token="));
-        const token=t.substring(7,)
-        console.log(token)
+        // const t = req.headers.cookie.split(";").find(c => c.trim().startsWith("token="));
+        // const token=t.substring(7,)
+        token=req.cookies['token']
+        // console.log(token)
         if(!token) return res.json(false)
         jwt.verify(token,jwtsec)
         res.send(true)

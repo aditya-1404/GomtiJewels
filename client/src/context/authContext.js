@@ -8,7 +8,7 @@ export const Auth=createContext();
 const AuthContext=(props)=>{
     const [login,setlogin]=useState(false)
     async function getLoggedIn() {
-        const loggedInRes = await axios.get("https://gomti-backend.onrender.com/admin/loggedin");
+        const loggedInRes = await axios.get("https://gomti-backend.onrender.com/admin/loggedin",{withCredentials:true});
         // console.log(loggedInRes.data)
         setlogin(loggedInRes.data);
       }

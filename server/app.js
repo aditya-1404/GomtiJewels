@@ -3,6 +3,9 @@ const mongoose=require('mongoose')
 const dotenv=require('dotenv')
 const app=express()
 const cors=require('cors');
+var cookies = require("cookie-parser");
+
+app.use(cookies());
 dotenv.config();
 mongoose.connect(process.env.LINK).then(()=>{console.log("done")})
 app.use(express.urlencoded({extended:true}))
