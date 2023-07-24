@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useState,useContext } from 'react'
 import { Link } from 'react-router-dom'
 import { Auth } from '../context/authContext'
 import axios from 'axios'
@@ -10,7 +10,6 @@ function Nav() {
     window.location.reload();
   }
   const {login}=useContext(Auth)
-  console.log(login);
   return (
     <div className='font-link'>
         <nav class="navbar navbar-expand-lg">

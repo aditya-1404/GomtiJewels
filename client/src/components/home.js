@@ -9,7 +9,7 @@ function home() {
     <Nav/>
     <div className='container-h font-link'>
         <h1 className='head'>Gomti Jewels</h1>
-        <h3>The Best jewelry Under One Roof.</h3>
+        <h3>The Best jewellry Under One Roof.</h3>
     </div>
     </>
   )
