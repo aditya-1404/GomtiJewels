@@ -8,22 +8,12 @@ import { useEffect } from 'react'
 
 
 function Shop(props) {
-  var a=[]
-  const [items,setItem]=useState(a);
-  const getdata=async ()=>{
-    const item=await axios.get('https://gomti-backend.onrender.com/get')
-    setItem(item.data)
-    // console.log(items)
-  }
-  useEffect(()=>{
-    getdata()
-  },[])
-  console.log(items)
+  
   return (
       <>
       <Nav/>
       <div className='container itemlist'>
-      {items.map((i) => {
+      {props.items.map((i) => {
         // console.log(i)
         return(<Item item={i}/>)
       })}

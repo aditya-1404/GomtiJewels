@@ -27,9 +27,6 @@ function Nav() {
           <Link class="nav-link litem" to="/shop">Shop</Link>
         </li>
         <li class="nav-item">
-          <Link class="nav-link litem" to="/shop">About Us</Link>
-        </li>
-        <li class="nav-item">
           <Link class="nav-link litem cont" to="/contact">ContactUs</Link>
         </li>
       </ul>

@@ -3,7 +3,7 @@ import axios from 'axios';
 import Nav from './nav'
 import {Auth} from '../context/authContext';
 import { useNavigate } from 'react-router-dom';
-
+import './addproduct.css'
 
 function Addproduct() {
   const navigate=useNavigate();
@@ -30,6 +30,7 @@ function Addproduct() {
       formData.append('id', id)
       formData.append('name', name)
       formData.append('desc', desc)
+        
     }
 
 
@@ -38,9 +39,9 @@ function Addproduct() {
     <Nav/>
         <h1 className='text-center my-3'>Add Product</h1>
       <form action="https://gomti-backend.onrender.com/" method="post" enctype="multipart/form-data">
-    <div className='container'>
+    <div className='container11'>
     <div class="mb-3">
-  <label for="formGroupExampleInput" class="form-label">Product id(Unique):</label>
+  <label for="formGroupExampleInput" class="form-label">Product id:</label>
   <input type="text" class="form-control" name="id" value={id} id="formGroupExampleInput" onChange={inputhandleid} placeholder="Enter product id"/>
 </div>
     <div class="mb-3">

@@ -14,3 +14,37 @@
     font-size: 7.5rem;
     text-align: center;
 }
+.litem{
+    font-size: 25px  !important;
+    padding-left: 26px !important;
+    
+}
+.cont{
+    padding-right: 100px !important;
+}
+.logitem{
+    font-size: 20px !important;
+    padding-right: 30px !important;
+}
+.gomitem{
+    padding-left: 20px !important;
+}
+.logitem1{
+    font-size: 20px !important;
+    
+}
+.logitem2{
+    font-size: 20px !important;
+    padding-right: 30px !important;
+}
+.ullogin{
+    display: flex;
+    flex-direction: row;
+    
+}
+.ullogin>li{
+    
+    padding-left: 15px;
+}
+
+

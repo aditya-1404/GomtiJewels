@@ -31,7 +31,7 @@ export default function() {
                     <input type={'email'} value={email} className='my-2 form-control' style={{'height': '45px','font-size': 'large','padding': '10px','border-radius': '30px'}} placeholder={'Email address'}></input>
                     <textarea class="my-2 form-control" value={text} placeholder={'Any Questions?'} style={{'height': '100px','font-size': 'large','padding': '10px','border-radius': '30px'}} rows="5"></textarea>
                   </div>
-                    <button type="button" onClick={submit} class="btn btn-dark mx-auto d-block">Submit</button>
+                    <button type="button" style={{width:'100px'}} onClick={submit} class="btn btn-dark mx-auto d-block">Submit</button>
                 </div>
             </div>
         </div>
