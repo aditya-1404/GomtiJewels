@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 
 
-.productpage{
-    font-family: 'Poppins', sans-serif;
+body{
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 400 !important;
 }
 .container11 {
     font-family: 'Poppins', sans-serif;
