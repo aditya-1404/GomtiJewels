@@ -1,6 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Playwrite+HU:wght@100..400&family=Redressed&display=swap');
 
-.font-link{
-    font-family: 'Kaushan Script', cursive;
+nav{
+    /* font-family: 'Kaushan Script', cursive; */
+    font-family: "Redressed", cursive;
 }
-
+.gomitem{
+    font-weight: 1000 !important;
+}
+.nav-link{
+    font-size: 25px !important;
+    font-weight: 300 !important;
+    padding-top: 10px !important;
+}
+.nav-link:hover{
+    font-weight: 700 !important;
+}
+.font,.navbar-nav{
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 40px;   
+}

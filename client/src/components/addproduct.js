@@ -37,6 +37,7 @@ function Addproduct() {
   return (
     <>
     <Nav/>
+    <div className='productpage'>
         <h1 className='text-center my-3'>Add Product</h1>
       <form action="https://gomti-backend.onrender.com/" method="post" enctype="multipart/form-data">
     <div className='container11'>
@@ -59,6 +60,7 @@ function Addproduct() {
 </div>
 </div>
   </form>
+  </div>
     </>
   )
 }

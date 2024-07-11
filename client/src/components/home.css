@@ -1,17 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
+body{
+    /* overflow-x: hidden; */
+}
+.page1{
+    height: 100vh;
+    width: 100%;
+}
 .font-link{
-    font-family: 'Kaushan Script', cursive;
+    font-family: 'Kaushan Script', cursive !important;
 }
 .container-h{
     height: 80vh;
-  display: flex;    
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .head{
-    font-size: 7.5rem;
+    font-size: 7.5rem !important;
     text-align: center;
 }
 .litem{
@@ -48,3 +55,39 @@
 }
 
 
+.page2{
+    height: 100vh;
+    width: 100%;
+}
+.strip{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    gap:1.5vw;
+    padding: 0 1.5vw;
+    flex-shrink: 0;
+    transform: translateX(-100%);
+    /* justify-content: center; */
+    
+}
+.stripText{
+    color:black;
+    font-size: 5.6rem;
+    font-family: 'Kaushan Script', cursive !important;
+}
+.strip img{
+    height: 90px;
+}
+.move{
+    background-color: #f4d5d5;
+    padding: 2vw 0;
+    display: flex;
+    overflow: hidden;
+}
+.page1{
+    height: 100vh;
+}
+.footer{
+    height: 70vh;
+    background-color: #111;
+}

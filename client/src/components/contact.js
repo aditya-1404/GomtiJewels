@@ -1,6 +1,8 @@
 import React,{useState} from 'react'
 import logo from '../images/envelope.png'
 import Nav from './nav';
+import Footer from './footer';
+import './contact.css'
 
 export default function() {
   const [first_name,setfirst_name]=useState();
@@ -16,7 +18,7 @@ export default function() {
   return (
     <>
     <Nav/>
-    <div className='container my-4 text-center'>
+    <div className='contactpage container my-4 text-center'>
       <h1 className='font-weight-bold'><strong>Contact Us</strong></h1>
     </div>
         <div className='container'>

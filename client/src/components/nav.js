@@ -1,10 +1,32 @@
-import React, { useState,useContext } from 'react'
+import React, { useState,useContext, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Auth } from '../context/authContext'
 import axios from 'axios'
 import "../components/nav.css"
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
+
 
 function Nav() {
+  useGSAP(()=>{
+    var tl=gsap.timeline()
+
+    tl.from('.gomitem',{
+      y:-300,
+      duration:0.3,
+      delay:0.3
+    })
+    tl.from('.litem',{
+      y:-300,
+      duration:0.3,
+      stagger:0.1
+    })
+    tl.from('.logitem1,.logitem2,.logitem',{
+      y:-300,
+      duration:0.3,
+      stagger:0.1
+    })
+  })
   const logout=async ()=>{
     await axios.get('https://gomti-backend.onrender.com/admin/logout')
     window.location.reload();
@@ -12,7 +34,7 @@ function Nav() {
   const {login}=useContext(Auth)
   return (
     <div className='font-link'>
-        <nav class="navbar navbar-expand-lg">
+        <nav>
   <div class="container-fluid font">
     <Link class="navbar-brand gomitem" to="/"><h1>Gomti Jewels</h1></Link>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

@@ -28,7 +28,7 @@ router.post('/',auth,upload.single('product'),(req,res)=>{
   cloudinary.uploader.upload(req.file.path,
   { public_id: req.body.id }, 
   function(error, result) {console.log(result); });
-    res.send('Product Added')
+    res.send('Product Added Successfully!')
     const data=new productdata(req.body)
     data.save();
 })
