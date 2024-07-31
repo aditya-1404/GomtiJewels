@@ -26,7 +26,7 @@ const corsOptions = {
     credentials: true, // Allow credentials (cookies) to be sent
     exposedHeaders: ["set-cookie"], // Expose the set-cookie header
 };
-// app.use(cors())
+app.use(cors())
 app.use('/',require("./routes/add"))
 app.use('/admin',require("./routes/admin"))
 
