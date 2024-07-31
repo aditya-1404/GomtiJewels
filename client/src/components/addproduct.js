@@ -39,7 +39,7 @@ function Addproduct() {
     <Nav/>
     <div className='productpage'>
         <h1 className='text-center my-3'>Add Product</h1>
-      <form action="https://gomti-jewels-f4v1fzu0q-aditya-1404s-projects.vercel.app/" method="post" enctype="multipart/form-data">
+      <form action="hhttps://gomti-jewels-git-main-aditya-1404s-projects.vercel.app/" method="post" enctype="multipart/form-data">
       {/* <form action="https://gomti-backend.onrender.com/" method="post" enctype="multipart/form-data"> */}
     <div className='container11'>
     <div class="mb-3">

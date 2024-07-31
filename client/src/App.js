@@ -15,7 +15,7 @@ function App() {
   var a=[]
   const [items,setItem]=useState(a);
   const getdata=async ()=>{
-    const item=await axios.get('https://gomti-backend.onrender.com/get')
+    const item=await axios.get('https://gomti-jewels-git-main-aditya-1404s-projects.vercel.app/get')
     setItem(item.data)
     // console.log(items)
   }

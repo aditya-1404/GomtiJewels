@@ -14,7 +14,7 @@ function Login() {
     const handlesubmit=async(e)=>{
         e.preventDefault()
         try{
-        const cred=await axios.post("https://gomti-jewels-f4v1fzu0q-aditya-1404s-projects.vercel.app/admin/login",{email,pwd},{withCredentials:true})
+        const cred=await axios.post("https://gomti-jewels-git-main-aditya-1404s-projects.vercel.app/admin/login",{email,pwd},{withCredentials:true})
         // const cred=await axios.post("https://gomti-backend.onrender.com/admin/login",{email,pwd},{withCredentials:true})
         navigate("/add");
         window.location.reload();
