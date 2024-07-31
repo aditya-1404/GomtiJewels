@@ -21,7 +21,11 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 //     next();
 //   });
 app.set("trust proxy", 1)
-app.use(cors());
+const corsOptions = {
+    origin: "https://gomti-jewels-tq9c.vercel.app", // Allow requests only from this origin
+    credentials: true, // Allow credentials (cookies) to be sent
+    exposedHeaders: ["set-cookie"], // Expose the set-cookie header
+};
 // app.use(cors())
 app.use('/',require("./routes/add"))
 app.use('/admin',require("./routes/admin"))
