@@ -6,6 +6,7 @@ nav{
     font-family: "Redressed", cursive;
 }
 .gomitem{
+    font-size: 40px !important;
     font-weight: 1000 !important;
 }
 .nav-link{
