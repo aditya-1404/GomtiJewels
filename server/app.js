@@ -21,11 +21,7 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 //     next();
 //   });
 app.set("trust proxy", 1)
-app.use(cors({
-    origin: true,
-    credentials: true,
-    exposedHeaders: ["set-cookie"],
-}));
+app.use(cors());
 // app.use(cors())
 app.use('/',require("./routes/add"))
 app.use('/admin',require("./routes/admin"))
