@@ -25,6 +25,7 @@ const corsOptions = {
     origin: 'https://gomti-jewels-tq9c.vercel.app',
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
+    allowedHeaders: 'Content-Type, Authorization',
     optionsSuccessStatus: 204
   };
 // Apply CORS middleware
